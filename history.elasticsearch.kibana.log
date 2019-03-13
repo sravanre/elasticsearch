@@ -72,6 +72,7 @@
    72  cd /etc/kibana/
    73  ls
    74  less kibana.yml 
+   ### search the port number 5601 , that the kibana is running  and linked to http elasticsearch on port 9200 internally.
    75  ps -ef  | grep kibana
    76  rpm -qa | grep -i kibana
    77  systemctl enable kibana
