@@ -1,0 +1,13 @@
+[elastic-stack-6.x]
+name=elasticsearch software repo
+baseurl=https://artifacts.elastic.co/packages/6.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md
+
+
+
+#https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html
+
