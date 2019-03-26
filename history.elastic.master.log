@@ -1,0 +1,125 @@
+    1  yum install git -y
+    2  cd /etc/yum.repos.d/
+    3  ls
+    4  cd /tmp/
+    5  git clone https://github.com/sravanre/elasticsearch.git
+    6  ls
+    7  cd elasticsearch/
+    8  ls
+    9  cp elastic-stack.repo /etc/yum.repos.d/
+   10  cat history.elasticsearch.kibana.log | grep java
+   11  yum install java-1.8.0-openjdk elasticsearch -y
+   12  yum install kibana -y
+   13  ls
+   14  cat elastic-stack.repo 
+   15  cd /etc/elasticsearch/
+   16  ls
+   17  vim elasticsearch.yml 
+   18  vi elasticsearch.yml 
+   19  cat elasticsearch.yml 
+   20  systemctl start elasticsearch
+   21  curl localhost:9200
+   22  systemctl start kibana
+   23  cd /var/log/elasticsearch/
+   24  ls
+   25  less sravan-elastic.log
+   26  yum install firefox -y
+   27  curl localhost:9200/_cat/nodes
+   28  curl localhost:9200/_cat/indices?v
+   29   shutdown -h now
+   30  curl localhost:9200
+   31  systemctl start elasticsearch
+   32  systemctl status elasticsearch
+   33  systemctl start kibana
+   34  curl localhost:9200
+   35  curl localhost:9200/_cat/nodes
+   36  curl localhost:9200/_cat/indices?v
+   37  curl localhost:9200/_cat/nodes?v
+   38  systemctl status elasticsearch
+   39  curl localhost:9200/_cat/nodes?v
+   40  systemctl status elasticsearch
+   41  systemctl start elasticsearch
+   42  curl localhost:9200
+   43  systemctl start kibana
+   44  curl localhost:9200/_cat/index
+   45  curl localhost:9200/_cat/index?v
+   46  curl localhost:9200/_cat/indices?v
+   47  curl localhost:9200/_cat/indices
+   48  curl localhost:9200/_cat/nodes
+   49  curl localhost:9200/_cat/node
+   50  curl localhost:9200/_cat/nodes
+   51  clear
+   52  systemctl status elasticsearch
+   53  systemctl start elasticsearch
+   54  systemctl status elasticsearch
+   55  cd /var/log/elasticsearch/
+   56  ls
+   57  ls -ltr
+   58  date
+   59  less sravan-elastic.log 
+   60  systemctl start kibana
+   61  c
+   62  curl localhost:9200/_cat/indices
+   63  history | grep _cat
+   64  curl localhost:9200/_cat/nodes
+   65  history | grep -i jdk
+   66  curl localhost:9200/_cat/nodes
+   67  hostname
+   68  more /etc/elasticsearch/elasticsearch.yml 
+   69  uptime
+   70  clear
+   71  systemctl status kibana
+   72  uptime
+   73  curl localhost:9200/_cat/nodes
+   74  curl localhost:5601
+   75  systemctl restart kibana
+   76  curl localhost:9200/_cat/nodes
+   77  curl localhost:9200/nodes
+   78  curl localhost:9200/_cat/nodes
+   79  clear
+   80  df -h
+   81  systemctl status elasticsearch
+   82  systemctl start elasticsearch
+   83  curl localhost:9200
+   84  curl localhost:9200/_cat/nodes
+   85  curl localhost:9200/_cat/nodes>
+   86  curl localhost:9200/_cat/nodes?help
+   87  curl localhost:9200/_cat/nodes?v
+   88  systemctl status kibana
+   89  systemctl start kibana
+   90  clear
+   91  uptime
+   92  df -h
+   93  vts
+   94  vgs
+   95  lvs
+   96  df -Th
+   97  lsblk -f
+   98  clear
+   99  ls
+  100  cd /
+  101  ls
+  102  cd /root/
+  103  ls
+  104  cd /home/
+  105  ls
+  106  cd cloud_user/
+  107  ls
+  108  curl -H 'Content-Type: application/x-ndjson' -X POST localhost:9200/bank/account/_bulk?pretty --data-binary @accounts.json
+  109  clear
+  110  curl localhost:9200/_cat/
+  111  curl localhost:9200/_cat/allocation
+  112  curl localhost:9200/_cat/allocation?v
+  113  curl localhost:9200/_cat/allocation?help
+  114  curl localhost:9200/_cat/allocation?h
+  115  curl localhost:9200/_cat/allocation?v
+  116  curl localhost:9200/_cat/pluggins
+  117  curl localhost:9200/_cat/plugins
+  118  curl localhost:9200/_cat/plugins?v
+  119  curl localhost:9200/_cat/nodeattrs
+  120  curl localhost:9200/_cat/nodeattrs?v
+  121  systemctl start kibana statu
+  122  systemctl status elasticsearch
+  123  history | less
+  124  history | grep -i account
+  125  history >> /tmp/history.elastic.master.log
