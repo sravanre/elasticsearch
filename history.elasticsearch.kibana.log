@@ -1,0 +1,91 @@
+    1  clear
+    2  w
+    3  clear
+    4  cd /etc/yum.repos.d/
+    5  ls
+    6  vim elastic_repp
+    7  yum install git -y
+    8  cd /tmp
+    9  ls
+   10  git clone https://github.com/sravanre/elasticsearch.git
+   11  ls
+   12  cd elasticsearch/
+   13  ls
+   14  ls -al
+   15  vim /etc/yum.repos.d/elastic_repp 
+   16  yum repolist
+   17  yum cleanall
+   18  yum --help
+   19  yum --help | grep clean
+   20  yum clean --all
+   21  yum clean all
+   22  yum repolist
+   23  yum install elasticsearch
+   24  cd /etc/yum.repos.d/
+   25  ls
+   26  vim elastic_repp 
+   27  mv elastic_repp elastic-stack.repo
+   28  yum repolist
+   29  cp elastic-stack.repo /tmp/elasticsearch/elastic-stack.repo
+   30  yum install elasticsearch -y
+   31  systemctl daemon-reload
+   32  systemctl enable elasticsearch
+   33  yum install elasticsearch -y
+   34  yum install java-1.8.0-openjdk elasticsearch -y
+   35  cd /var/log/elasticsearch
+   36  ls
+   37  systemctl daemon-reload
+   38  systemctl enable elasticsearch
+   39  systemctl start elasticsearch
+   40  ls
+   41  tailf gc.log.0.current
+   42  ls
+   43  ls -ltr
+   44  grep 9200 elasticsearch.log
+   45  curl localhost:9200
+   46  yum install firefox
+   47  ls
+   48  clear
+   49  ls
+   50  ll
+   51  uptime
+   52  top -n 1
+   53  free -mt
+   54  sync
+   55  ls
+   56  ll
+   57  uptime
+   58  less elasticsearch.log
+   59  top -n 1
+   60  uptime
+   61  df -h
+   62  uptime
+   63  yum install kibana -y
+   64  ls
+   65  cd /var/log/elasticsearch/
+   66  ls
+   67  ls 0l
+   68  ls -l
+   69  grep -r 5601 elasticsearch.log
+   70  grep -r 9200 *
+   71  grep -r 5601 *
+   72  cd /etc/kibana/
+   73  ls
+   74  less kibana.yml 
+   ### search the port number 5601 , that the kibana is running  and linked to http elasticsearch on port 9200 internally.
+   75  ps -ef  | grep kibana
+   76  rpm -qa | grep -i kibana
+   77  systemctl enable kibana
+   78  systemctl start kibana
+   79  systemctl status kibana
+   80  culr clll
+   81  yum install elinks
+   82  uptime
+   83  df -h
+   84  yum load-transaction /tmp/yum_save_tx.2019-03-13.14-36.cbe43z.yumtx
+   85  elinks localhost:5601
+   86  elinks google.com
+   87  uptime
+   88  elinks http://localhost:5601
+   89  history | less
+   90  history >> /tmp/elasticsearch/history.elasticsearch.kibana.log
